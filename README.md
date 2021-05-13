@@ -8,3 +8,12 @@
 | 5.12 | Template Paper Title [[paper]](paper link) [[slides]](/slides/test.pdf) | Your Name | Any Other |
 
 ----
+
+## Terms in Archtecture
+ 
+see [this](/terms/arch.md)
+
+## Polyhedral Model Material
+
+see [this](/poly/material.md)
+
