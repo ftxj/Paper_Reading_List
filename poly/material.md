@@ -1,13 +1,14 @@
+Poly Materials
+
 - [Book](#book)
 - [Course](#course)
 - [Conference](#conference)
+- [Papers](#papers)
   - [Ploy for Irregular/Non-affine(Sparse/Recurisive...)](#ploy-for-irregularnon-affinesparserecurisive)
   - [Poly in weak-dependence(Reduce...)](#poly-in-weak-dependencereduce)
   - [Poly for communication avoiding](#poly-for-communication-avoiding)
   - [Poly for Domain-Specific-Compiler](#poly-for-domain-specific-compiler)
-  - [| 2019 | Polyhedral Compilation for Domain Specific Languages[[paper]](https://hal.inria.fr/tel-02385670/document) |  |  |](#-2019--polyhedral-compilation-for-domain-specific-languagespaper-----)
   - [Poly for Hardware/HLS](#poly-for-hardwarehls)
-  - [| 2021 IMPACT | Hardware Abstractions for targeting EDDO Architectures with the Polyhedral Model[[paper]](https://acohen.gitlabpages.inria.fr/impact/impact2021/papers/IMPACT_2021_paper_6.pdf) [[sldies]](https://acohen.gitlabpages.inria.fr/impact/impact2021/slides/IMPACT_2021_slides_6.pdf) |  |  |](#-2021-impact--hardware-abstractions-for-targeting-eddo-architectures-with-the-polyhedral-modelpaper-sldies-----)
   - [Poly Tools](#poly-tools)
   - [Poly on multi-cpu/gpu](#poly-on-multi-cpugpu)
   - [Poly for Pipeline](#poly-for-pipeline)
@@ -27,6 +28,8 @@
 # Conference
 * IMPACT: International Workshop on Polyhedral Compilation Techniques[[website]](https://acohen.gitlabpages.inria.fr/impact/)
   * 2011 年开始，每年一届，接收work-in-process的文章。每届10篇以内。
+
+# Papers
 
 | **Date** | **Paper** | **Main Contribute** | **Notes** |
 | --- | --- | --- | --- |
@@ -83,6 +86,7 @@
 | --- | --- | --- | --- |
 | 2014 IMPACT | Presentation: Domain-specific languages and optimizers[[slides]](https://acohen.gitlabpages.inria.fr/impact/impact2014/papers/impact2014-bondhugula-slides.pdf) |  |  |
 | 2019 | Polyhedral Compilation for Domain Specific Languages[[paper]](https://hal.inria.fr/tel-02385670/document) |  |  |
+
 ----
 
 ## Poly for Hardware/HLS
@@ -103,6 +107,7 @@
 | 2020 IMPACT | Generating SIMD Instructions for Cerebras CS-1 using Polyhedral Compilation Techniques[[paper]](https://acohen.gitlabpages.inria.fr/impact/impact2020/papers/IMPACT_2020_paper_3.pdf) [[sldies]](https://acohen.gitlabpages.inria.fr/impact/impact2020/slides/IMPACT_2020_slides_3.pdf) | ReRAM Compiler | AI Chip |
 | 2020 IMPACT | Bounded Stream Scheduling in Polyhedral OpenStream[[paper]](https://acohen.gitlabpages.inria.fr/impact/impact2020/papers/IMPACT_2020_paper_4_new.pdf) [[sldies]](https://acohen.gitlabpages.inria.fr/impact/impact2020/slides/IMPACT_2020_slides_4.pdf) | Dataflow Compiler |  |
 | 2021 IMPACT | Hardware Abstractions for targeting EDDO Architectures with the Polyhedral Model[[paper]](https://acohen.gitlabpages.inria.fr/impact/impact2021/papers/IMPACT_2021_paper_6.pdf) [[sldies]](https://acohen.gitlabpages.inria.fr/impact/impact2021/slides/IMPACT_2021_slides_6.pdf) |  |  |
+
 ----
 
 
