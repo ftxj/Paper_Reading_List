@@ -1,3 +1,22 @@
+- [Book](#book)
+- [Course](#course)
+- [Conference](#conference)
+  - [Ploy for Irregular/Non-affine(Sparse/Recurisive...)](#ploy-for-irregularnon-affinesparserecurisive)
+  - [Poly in weak-dependence(Reduce...)](#poly-in-weak-dependencereduce)
+  - [Poly for communication avoiding](#poly-for-communication-avoiding)
+  - [Poly for Domain-Specific-Compiler](#poly-for-domain-specific-compiler)
+  - [| 2019 | Polyhedral Compilation for Domain Specific Languages[[paper]](https://hal.inria.fr/tel-02385670/document) |  |  |](#-2019--polyhedral-compilation-for-domain-specific-languagespaper-----)
+  - [Poly for Hardware/HLS](#poly-for-hardwarehls)
+  - [| 2021 IMPACT | Hardware Abstractions for targeting EDDO Architectures with the Polyhedral Model[[paper]](https://acohen.gitlabpages.inria.fr/impact/impact2021/papers/IMPACT_2021_paper_6.pdf) [[sldies]](https://acohen.gitlabpages.inria.fr/impact/impact2021/slides/IMPACT_2021_slides_6.pdf) |  |  |](#-2021-impact--hardware-abstractions-for-targeting-eddo-architectures-with-the-polyhedral-modelpaper-sldies-----)
+  - [Poly Tools](#poly-tools)
+  - [Poly on multi-cpu/gpu](#poly-on-multi-cpugpu)
+  - [Poly for Pipeline](#poly-for-pipeline)
+  - [Poly for datalayout](#poly-for-datalayout)
+  - [Poly for Tiling](#poly-for-tiling)
+  - [Poly for Scheduling and Optimization](#poly-for-scheduling-and-optimization)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 # Book
 
 * (2001) Optimizing Compilers for Modern Architectures: A Dependence-based Approach [[pdf]](Dependence-Approach-Compiler.pdf)
