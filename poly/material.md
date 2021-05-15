@@ -4,6 +4,7 @@ Poly Materials
 - [Course](#course)
 - [Conference](#conference)
 - [Papers](#papers)
+  - [Poly for CodeGen](#poly-for-codegen)
   - [Ploy for Irregular/Non-affine(Sparse/Recurisive...)](#ploy-for-irregularnon-affinesparserecurisive)
   - [Poly in weak-dependence(Reduce...)](#poly-in-weak-dependencereduce)
   - [Poly for communication avoiding](#poly-for-communication-avoiding)
@@ -24,6 +25,8 @@ Poly Materials
 
 # Course
 * 中科大 https://s4plus.ustc.edu.cn/kjxz/list.htm
+* UCLA http://web.cs.ucla.edu/~pouchet/#lectures
+* Stanford[news] https://cs343d.github.io/
 
 # Conference
 * IMPACT: International Workshop on Polyhedral Compilation Techniques[[website]](https://acohen.gitlabpages.inria.fr/impact/)
@@ -36,6 +39,13 @@ Poly Materials
 | 1991 |Optimizing the Memory Hierarchy by Compositing Automatic Transformations on Computations and Data [[paper]](https://ieeexplore.ieee.org/document/9251965) [[slides]](https://www.di.ens.fr/~zhaojie/micro2020-presentation) | Xin Jie | Micro '20 |
 | 1991 | Template Paper Title [[paper]](paper link) [[slides]](/slides/test.pdf) | Your Name | Any Other |
 | 2016 CC | Mapping Deviation: A Technique to Adapt or to Guard Loop Transformation Intuitions for Legality [[paper]]((https://dl.acm.org/doi/abs/10.1145/2892208.2892216))  | 多面体模型优化太过于黑盒,没有反馈 |  |
+
+----
+
+## Poly for CodeGen
+| **Date** | **Paper** | **Main Contribute** | **Notes** |
+| --- | --- | --- | --- |
+| 2019 CGO |TIRAMISU: A Polyhedral Compiler for Expressing Fast and Portable Code [[paper]](https://ieeexplore.ieee.org/abstract/document/8661197)  |  |  |
 
 ----
 
@@ -85,7 +95,10 @@ Poly Materials
 | **Date** | **Paper** | **Main Contribute** | **Notes** |
 | --- | --- | --- | --- |
 | 2014 IMPACT | Presentation: Domain-specific languages and optimizers[[slides]](https://acohen.gitlabpages.inria.fr/impact/impact2014/papers/impact2014-bondhugula-slides.pdf) |  |  |
+| 2015 ASPLOS | PolyMage: Automatic Optimization for Image Processing Pipelines [[paper]](https://dl.acm.org/doi/10.1145/2694344.2694364) | Halide |  |
+| 2018 | Tensor Comprehensions: Framework-Agnostic High-Performance Machine Learning Abstractions [[paper]](https://arxiv.org/abs/1802.04730) | DL |  |
 | 2019 | Polyhedral Compilation for Domain Specific Languages[[paper]](https://hal.inria.fr/tel-02385670/document) |  |  |
+| 2021 CGO | MLIR: A Compiler Infrastructure for the End of Moore's Law [[paper]](https://arxiv.org/abs/2002.11054) |  |  |
 
 ----
 
