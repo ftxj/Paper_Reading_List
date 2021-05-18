@@ -1,6 +1,7 @@
 Poly Materials
 
 - [Book](#book)
+- [People](#people)
 - [Course](#course)
 - [Conference](#conference)
 - [Papers](#papers)
@@ -22,6 +23,8 @@ Poly Materials
 # Book
 
 * (2001) Optimizing Compilers for Modern Architectures: A Dependence-based Approach [[pdf]](Dependence-Approach-Compiler.pdf)
+# People
+* Bondhugula https://www.csa.iisc.ac.in/~udayb/research.shtml
 
 # Course
 * 中科大 https://s4plus.ustc.edu.cn/kjxz/list.htm
