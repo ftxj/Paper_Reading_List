@@ -14,6 +14,11 @@
  
 see [this](/terms/arch.md)
 
+## Acclerator Design Material
+
+see [this](/Acclerators/material.md)
+
+
 ## Polyhedral Model Material
 
 see [this](/poly/material.md)
