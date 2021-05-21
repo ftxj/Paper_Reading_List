@@ -6,7 +6,6 @@ Poly Materials
 - [Conference](#conference)
 - [Acclerator Classification](#acclerator-classification)
 - [Company](#company)
-  - [* 2020 [[Data Compression]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a001/466100a001.pdf)](#-2020-data-compression)
 - [Big Event Timeline](#big-event-timeline)
 - [Papers](#papers)
   - [Acclerator for Deep Learning (without SNN)](#acclerator-for-deep-learning-without-snn)
@@ -58,6 +57,7 @@ Poly Materials
   * 2021 [[Framework for Machine Learning Accelerators]](https://ieeexplore.ieee.org/document/9407039)
 * IBM
   * 2020 [[Data Compression]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a001/466100a001.pdf)
+
 ----
 
 # Big Event Timeline
