@@ -5,6 +5,7 @@ Poly Materials
 - [Course](#course)
 - [Conference](#conference)
 - [Acclerator Classification](#acclerator-classification)
+- [Company](#company)
 - [Papers](#papers)
   - [Acclerator for Deep Learning](#acclerator-for-deep-learning)
   - [Acclerator for Machine Learning](#acclerator-for-machine-learning)
@@ -12,6 +13,7 @@ Poly Materials
   - [Acclerator for Graph Processing](#acclerator-for-graph-processing)
   - [Acclerator for Sparse Data(SpMM, SpGemm, Sparse DNN)](#acclerator-for-sparse-dataspmm-spgemm-sparse-dnn)
   - [Acclerator for General Purpose](#acclerator-for-general-purpose)
+  - [Acclerator for Linear System](#acclerator-for-linear-system)
   - [Acclerator for Others](#acclerator-for-others)
   - [Compiler & Runtime Supprot for Acclerators](#compiler--runtime-supprot-for-acclerators)
   - [SW/HW Co-Design](#swhw-co-design)
@@ -42,6 +44,15 @@ Poly Materials
 * Dataflow
 * Spatial
 
+# Company
+* Huawei 
+  * 2021 [[Ascend]](https://ieeexplore.ieee.org/document/9407221/)
+* Facebook 
+  * 2021 [[Training Efficiency of Recommendation Modele]](https://arxiv.org/abs/2011.05497)
+* Google
+  * 2021 [[Framework for Machine Learning Accelerators]](https://ieeexplore.ieee.org/document/9407039)
+
+
 # Papers
 
 ## Acclerator for Deep Learning
@@ -63,6 +74,7 @@ total paper =
 | 2021 HPCA | GradPIM: A Practical Processing-in-DRAM Architecture for Gradient Descent[[paper]](https://arxiv.org/abs/2102.07511)[[video]](https://www.youtube.com/watch?v=KiO6y2z5xjU) |   |  |
 | 2021 HPCA | LazyBatching: An SLA-aware Batching System for Cloud Machine Learning Inference[[paper]](https://arxiv.org/abs/2010.13103)[[video]](https://www.youtube.com/watch?v=GhWS_K4YIZk) |   |  |
 | 2021 HPCA | Efficient Tensor Migration and Allocation on Heterogeneous Memory Systems for Deep Learning[[paper]](http://pasalabs.org/papers/2021/hpca21_sentinel.pdf)[[slides]](http://nvmw.ucsd.edu/nvmw2021-program/nvmw2021-data/nvmw2021-paper62-presentation_slides.pdf) |   |  |
+| 2021 HPCA | FuseKNA: Fused Kernel Convolution based Accelerator for Deep Neural Networks [[paper]](https://ieeexplore.ieee.org/abstract/document/9407121/) |   |  |
 
 ----
 
@@ -91,6 +103,7 @@ total paper =
 | 2021 ISCA | Large-Scale Graph Processing on FPGAs with Caches for Thousands of Simultaneous Misses |  |  |
 | 2021 HPCA | DepGraph: A Dependency-Driven Accelerator for Efficient Iterative Graph Processing |  |  |
 | 2021 HPCA | P-OPT: Practical Optimal Cache Replacement for Graph Analytics[[paper]](https://brandonlucia.com/pubs/POPT_HPCA21_CameraReady.pdf)[[slides]](https://users.ece.cmu.edu/~vigneshb/files/P-OPT-slides.pdf) |  |  |
+| 2021 HPCA | GCNAX: A Flexible and Energy-efficient Accelerator for Graph Convolutional Neural Networks[[paper]](https://ieeexplore.ieee.org/document/9407104)[[slides]](https://users.ece.cmu.edu/~vigneshb/files/P-OPT-slides.pdf) |  |  |
 
 
 ----
@@ -106,6 +119,8 @@ total paper =
 | 2021 HPCA |SPAGHETTI: Streaming Accelerators for Highly Sparse GEMM on FPGAs [[paper]](https://ieeexplore.ieee.org/abstract/document/9407115/)[[code]](https://github.com/sfu-arch/SpGEMM)  | SpGEMM |  |
 | 2021 HPCA | SpAtten: Efficient Sparse Attention Architecture with Cascade Token and Head Pruning [[paper]](https://arxiv.org/abs/2012.09852)[[slides]](https://hanlab.mit.edu/projects/spatten/assets/spatten/spatten_slides.pdf)[[website]](https://spatten.mit.edu/)  | Attention |  |
 | 2021 HPCA | SpaceA: Sparse Matrix Vector Multiplication on Processing-in-Memory Accelerator [[paper]](https://ieeexplore.ieee.org/abstract/document/9407163/)[[slides]](https://hanlab.mit.edu/projects/spatten/assets/spatten/spatten_slides.pdf)[[website]](https://spatten.mit.edu/)  | Attention |  |
+| 2021 HPCA | VIA: A Smart Scratchpad for Vector Units With Application to Sparse Matrix Computations [[paper]](https://ieeexplore.ieee.org/document/9407226/)[[slides]](https://hanlab.mit.edu/projects/spatten/assets/spatten/spatten_slides.pdf)[[website]](https://spatten.mit.edu/)  |  |  |
+| 2021 HPCA | FAFNIR: Accelerating Sparse Gathering by Using Efficient Near-Memory Intelligent Reduction [[paper]](http://hparch.gatech.edu/papers/bahar_2021_fafnir.pdf)  |  |  |
 
 
 
@@ -123,12 +138,20 @@ total paper =
 
 ----
 
+## Acclerator for Linear System
+| **Date** | **Paper** | **Focused On** | **Notes** |
+| --- | --- | --- | --- |
+| 2021 HPCA | An Analog Preconditioner for Solving Linear Systems [[paper]](https://ieeexplore.ieee.org/abstract/document/9407108) |  |  |
+
+----
+
 ## Acclerator for Others
 | **Date** | **Paper** | **Domain** | **Notes** |
 | --- | --- | --- | --- |
 | 2021 ISCA | PipeZK: Accelerating Zero-Knowledge Proof with a Pipelined Architecture | 密码学/区块链 |  |
 | 2021 ASPLOS | Robomorphic Computing: A Design Methodology for Domain-Specific Accelerators Parameterized by Robot Morphology [[paper]](https://dl.acm.org/doi/10.1145/3445814.3446746)  | 机器人 |  |
 | 2021 HPCA | QEI: Query Acceleration Can be Generic and Efficient in the Cloud [[paper]](https://ieeexplore.ieee.org/document/9407097) [[slides]](https://yifanyuan3.github.io/files/qei.pptx) |  |  |
+| 2021 HPCA | Hardware-Based Address-Centric Acceleration of Key-Value Store [[paper]](https://ieeexplore.ieee.org/document/9407194) [[slides]](https://yifanyuan3.github.io/files/qei.pptx) |  |  |
 
 ----
 
