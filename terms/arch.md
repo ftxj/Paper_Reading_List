@@ -5,3 +5,5 @@
 * Out-of-order
 * Superscalar processing
 * multiple way instraction issuing
+* Value Locality
+  * 2020 ISCA 
