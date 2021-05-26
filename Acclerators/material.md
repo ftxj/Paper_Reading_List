@@ -27,8 +27,8 @@ Poly Materials
 
 # People & Lab
 * [Xuehai Qian](http://alchem.usc.edu/portal/index.html)(钱学海) Graph Processing, Machine Learning Accleration
-* [Yuan Xie](https://seal.ece.ucsb.edu/)
-
+* [Yuan Xie](https://seal.ece.ucsb.edu/), UCSB, PIM, Arch
+* [Liang Yun](https://ericlyun.github.io/people/) PKU, EDA & Arch
 
 # Course
 
@@ -61,9 +61,10 @@ Poly Materials
 ----
 
 # Big Event Timeline
-| **Domain** | **2010** | **2011** | **2012** |
+| **Domain** | **2014** | **2015** | **2016** |
 | --- | --- | --- | --- |
-| 2021 ISCA | RaPiD: AI Accelerator for Ultra-Low Precision Training and Inference   |  |  |
+| DL | Diannao |  |  |
+| Graph | -- | -- | Graphicionado |
 
 ----
 
