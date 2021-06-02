@@ -12,11 +12,11 @@ Poly Materials
   - [Acclerator for Machine Learning](#acclerator-for-machine-learning)
   - [Acclerator for Gene](#acclerator-for-gene)
   - [Acclerator for Graph Processing](#acclerator-for-graph-processing)
-  - [Acclerator for Sparse Data(SpMM, SpGemm, Sparse DNN)](#acclerator-for-sparse-dataspmm-spgemm-sparse-dnn)
+  - [Acclerator for Sparse/Irregular Data(SpMM, SpGemm, Sparse DNN)](#acclerator-for-sparseirregular-dataspmm-spgemm-sparse-dnn)
   - [Acclerator for General Purpose](#acclerator-for-general-purpose)
   - [Acclerator for Linear System](#acclerator-for-linear-system)
   - [Acclerator for Others](#acclerator-for-others)
-  - [Compiler / Runtime / Analysis for Acclerators](#compiler--runtime--analysis-for-acclerators)
+  - [Compiler / Runtime / Analysis for Acclerators/CPU](#compiler--runtime--analysis-for-accleratorscpu)
   - [SW/HW Co-Design](#swhw-co-design)
 - [Some Interesting Paper](#some-interesting-paper)
 
@@ -29,6 +29,8 @@ Poly Materials
 * [Xuehai Qian](http://alchem.usc.edu/portal/index.html)(钱学海) Graph Processing, Machine Learning Accleration
 * [Yuan Xie](https://seal.ece.ucsb.edu/), UCSB, PIM, Arch
 * [Liang Yun](https://ericlyun.github.io/people/) PKU, EDA & Arch
+* [Zhiru Zhang](https://www.csl.cornell.edu/~zhiruz/publications.html), Cornell, HW/SW CO-Design, HLS
+* [i-acoma group](http://iacoma.cs.uiuc.edu/josep/torrellas.html), UIUC,
 
 # Course
 
@@ -111,7 +113,10 @@ Poly Materials
 | 2020 ISCA | Centaur: A Chiplet-Based, Hybrid Sparse-Dense Accelerator for Personalized Recommendations [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a968/466100a968.pdf)  | 推荐系统 |  |
 | 2020 ISCA | DeepRecSys: A System for Optimizing End-to-End At-Scale Neural Recommendation Inference [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a982/466100a982.pdf)  | 推荐系统 |  |
 | 2020 ISCA | DRQ: Dynamic Region-Based Quantization for Deep Neural Network Acceleration [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100b010/466100b010.pdf)  |  |  |
-
+| 2020 ASPLOS | DNNGuard: An Elastic Heterogeneous DNN Accelerator Architecture against Adversarial Attacks [[paper]](https://dl.acm.org/doi/pdf/10.1145/3373376.3378532) [[video]](https://www.youtube.com/watch?v=jdicv_HPUKA)  | NN加速器的安全？ |  |
+| 2020 ASPLOS | DeepSniffer: A DNN Model Extraction Framework Based on Learning Architectural Hints  |  |  |
+| 2020 ASPLOS | Prague: High-Performance Heterogeneity-Aware Asynchronous Decentralized Training  |  |  |
+| 2020 ASPLOS | NeuMMU: Architectural Support for Efficient Address Translations in Neural Processing Units  | NPU的TLB |  |
 
 ----
 
@@ -156,10 +161,11 @@ Poly Materials
 | 2020 MICRO | AWB-GCN: A Graph Convolutional Network Accelerator with Runtime Workload Rebalancing [[paper]](https://www.microarch.org/micro53/papers/738300a922.pdf)[[video]](https://youtu.be/tkI9wS-mHUk) | GCN |  |
 | 2020 ISCA | GraphABCD: Scaling Out Graph Analytics with Asynchronous Block Coordinate Descent [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a419/466100a419.pdf)  |  |  |
 | 2020 ISCA | GaaS-X: Graph Analytics Accelerator Supporting Sparse Data Representation Using Crossbar Architectures [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a433/466100a433.pdf)  |  |  |
+| 2020 ASPLOS | The TrieJax Architecture: Accelerating Graph Operations Through Relational Joins  |  |  |
 
 ----
 
-## Acclerator for Sparse Data(SpMM, SpGemm, Sparse DNN)
+## Acclerator for Sparse/Irregular Data(SpMM, SpGemm, Sparse DNN)
 (num) 2021 = 10,
 | **Date** | **Paper** | **Focused on** | **Notes** |
 | --- | --- | --- | --- |
@@ -178,6 +184,7 @@ Poly Materials
 | 2020 MICRO | TensorDash: Exploiting Sparsity to Accelerate Deep Neural Network Training [[paper]](https://www.microarch.org/micro53/papers/738300a781.pdf) [[video]](https://youtu.be/hMH-cp-EY3Q)  | Sparse Training |  |
 | 2020 MICRO | SAVE: Sparsity-Aware Vector Engine for Accelerating DNN Training and Inference on CPUs [[paper]](https://www.microarch.org/micro53/papers/738300a796.pdf) [[video]](https://youtu.be/FatPeRDNhl0)  | Sparse Training |  |
 | 2020 ISCA | Commutative Data Reordering: A New Technique to Reduce Data Movement Energy on Sparse Inference Workloads [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100b076/466100b076.pdf) | 传输能量 |  |
+| 2020 ASPLOS | Batch-Aware Unified Memory Management in GPUs for Irregular Workloads |  |  |
 
 
 
@@ -195,6 +202,10 @@ Poly Materials
 | 2021 HPCA | Analyzing and Leveraging Decoupled L1 Caches in GPUs [[paper]](https://adwaitjog.github.io/docs/pdf/sharedl1-pact20.pdf) [[video]](https://www.youtube.com/watch?v=3YbrS9UpTZ0) |  |  |
 | 2020 MICRO | FReaC Cache: Folded-Logic Reconfigurable Computing in the Last Level Cache [[paper]](https://www.microarch.org/micro53/papers/738300a102.pdf) [[video]](https://youtu.be/aJxrIggNOwI) |  |  |
 | 2020 ISCA | Hyper-AP: Enhancing Associative Processing Through a Full-Stack Optimization [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a846/466100a846.pdf)  | PIM |  |
+| 2020 ASPLOS | Livia: Data-Centric Computing Throughout the Memory Hierarchy |  |  |
+| 2020 ASPLOS | A Computational Temporal Logic for Superconducting Accelerators | 超导计算 |  |
+| 2020 ASPLOS | CryoCache: A Fast, Large, and Cost-Effective Cache Architecture for Cryogenic Computing | 低温计算? |  |
+| 2020 ASPLOS | Fleet: A Framework for Massively Parallel Streaming on FPGAs | FPGA流处理 |  |
 
 ----
 
@@ -218,11 +229,12 @@ Poly Materials
 | 2020 ISCA | Bonsai: High-Performance Adaptive Merge Tree Sorting [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a282/466100a282.pdf) |  |  |
 | 2020 ISCA | A Specialized Architecture for Object Serialization with Applications to Big Data Analytics [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a322/466100a322.pdf) |  |  |
 | 2020 ISCA | iPIM: Programmable In-Memory Image Processing Accelerator Using Near-Bank Architecture [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a804/466100a804.pdf) | NDP |  |
+| 2020 ISCA | IIU: Specialized Architecture for Inverted Index Search  | 倒排索引 |  |
 
 
 ----
 
-## Compiler / Runtime / Analysis for Acclerators
+## Compiler / Runtime / Analysis for Acclerators/CPU
 (num) 2021 = 2,
 | **Date** | **Paper** | **Domain** | **Notes** |
 | --- | --- | --- | --- |
@@ -238,6 +250,14 @@ Poly Materials
 | 2020 ISCA | Echo: Compiler-Based GPU Memory Footprint Reduction for LSTM RNN Training [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100b089/466100b089.pdf) |  |  |
 | 2020 ISCA | SmartExchange: Trading Higher-Cost Memory Storage/Access for Lower-Cost Computation [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100a954/466100a954.pdf) |  |  |
 | 2020 ISCA | Echo: Compiler-Based GPU Memory Footprint Reduction for LSTM RNN Training [[paper]](https://conferences.computer.org/isca/pdfs/ISCA2020-4QlDegUf3fKiwUXfV0KdCm/466100b089/466100b089.pdf) |  |  |
+| 2020 ASPLOS | Noise-Aware Dynamical System Compilation for Analog Devices with Legno [[paper]](https://people.csail.mit.edu/sachour/docs/asplos20-legno.pdf) [[video]](https://www.youtube.com/watch?v=7PU-6cWQQkE&list=PLsLWHLZB96VeVp3IVzvSH58ttVz_Anr7H&index=11&t=0s) |  |  |
+| 2020 ASPLOS | FlexAmata: A Universal and Efficient Adaption of Applications to Spatial Automata Processing Accelerators [[paper]](https://www.cs.ucr.edu/~elaheh/papers/ASPLOS2020_FlexAmata.pdf) [[video]](https://www.youtube.com/watch?v=sOV_cz-1CWQ&list=PLsLWHLZB96VeVp3IVzvSH58ttVz_Anr7H&index=10) |  |  |
+| 2020 ASPLOS | Accelerating Legacy String Kernels via Bounded Automata Learning [[paper]](http://www-personal.umich.edu/~jeannin/papers/angstadt2020accelerating.pdf) [[video]](https://youtube.com/watch?v=FB_2h5UyH1o&list=PLsLWHLZB96VeVp3IVzvSH58ttVz_Anr7H&index=15&t=0s) |  |  |
+| 2020 ASPLOS | Classifying Memory Access Patterns for Prefetching  | 分析访存模式 |  |
+| 2020 ASPLOS | AvA: Accelerated Virtualization of Accelerators | 加速器虚拟化 |  |
+| 2020 ASPLOS | A Hypervisor for Shared-Memory FPGA Platforms | 多FPGA |  |
+| 2020 ASPLOS | Virtualizing FPGAs in the Cloud | FPGA虚拟化 |  |
+| 2020 ASPLOS | Chronos: Efficient Speculative Parallelism for Accelerators |  |  |
 
 
 ----
@@ -258,7 +278,13 @@ Poly Materials
 | 2021 ASPLOS | Analytical Characterization and Design Space Exploration for Optimization of CNNs [[paper]](https://arxiv.org/abs/2101.09808)  | CNN Schedule |  |
 | 2021 HPCA | Layerweaver: Maximizing Resource Utilization of Neural Processing Units via Layer-Wise Scheduling [[paper]](https://ieeexplore.ieee.org/document/9407236)  |  |  |
 | 2021 HPCA | CSCNN: Algorithm-hardware Co-design for CNN Accelerators using Centrosymmetric Filters [[paper]](https://ieeexplore.ieee.org/document/9407182/)  |  |  |
+| 2020 ASPLOS | Interstellar: Using Halide’s Scheduling Language to Analyze DNN Accelerators |  |  |
+| 2020 ASPLOS | FirePerf: FPGA-Accelerated Full-System Hardware/Software Performance Profiling and Co-Design | FPGA加速器的分析 |  |
+| 2020 ASPLOS | Accelerometer: Understanding Acceleration Opportunities for Data Center Overheads at Hyperscale | 理解什么适合加速器 |  |
 
+
+
+----
 
 # Some Interesting Paper
 | **Date** | **Paper** | **Domain** | **Notes** |
