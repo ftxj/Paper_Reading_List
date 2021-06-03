@@ -17,13 +17,14 @@ Poly Materials
   - [Acclerator for Linear System](#acclerator-for-linear-system)
   - [Acclerator for Others](#acclerator-for-others)
   - [Compiler / Runtime / Analysis for Acclerators/CPU](#compiler--runtime--analysis-for-accleratorscpu)
+  - [Programming Model](#programming-model)
   - [SW/HW Co-Design](#swhw-co-design)
 - [Some Interesting Paper](#some-interesting-paper)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # Book
-
+* [DNN Acclerator, Gatech](https://www.morganclaypool.com/doi/10.2200/S01015ED1V01Y202005CAC052)
 
 # People & Lab
 * [Xuehai Qian](http://alchem.usc.edu/portal/index.html)(钱学海) Graph Processing, Machine Learning Accleration
@@ -31,6 +32,10 @@ Poly Materials
 * [Liang Yun](https://ericlyun.github.io/people/) PKU, EDA & Arch
 * [Zhiru Zhang](https://www.csl.cornell.edu/~zhiruz/publications.html), Cornell, HW/SW CO-Design, HLS
 * [i-acoma group](http://iacoma.cs.uiuc.edu/josep/torrellas.html), UIUC,
+* [Compilers Creating Custom Processors(CCCP) Lab](http://cccp.eecs.umich.edu/), Mich
+* [Synergy Lab](https://synergy.ece.gatech.edu/publications/), Gatech. DNN Arch
+* [Onur Mutlu](http://people.inf.ethz.ch/omutlu/projects.htm), ETH & CMU. Graph Mining, PIM
+
 
 # Course
 
@@ -262,6 +267,14 @@ Poly Materials
 
 ----
 
+
+## Programming Model 
+| **Date** | **Paper** | **Domain** | **Notes** |
+| --- | --- | --- | --- |
+| 2021 arxiv |GraphMineSuite: Enabling High-Performance and
+Programmable Graph Mining Algorithms with Set Algebra | Graph Mining, Set Alge |  |
+
+----
 
 ## SW/HW Co-Design 
 (num) 2021 = 11,
