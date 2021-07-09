@@ -6,7 +6,7 @@ Poly Materials
 - [Conference](#conference)
 - [Acclerator Classification](#acclerator-classification)
 - [Company](#company)
-- [Big Event Timeline](#big-event-timeline)
+- [Big Event Timeline(cite > 100 / Best Paper...)](#big-event-timelinecite--100--best-paper)
 - [Papers](#papers)
   - [Acclerator for Deep Learning (without SNN)](#acclerator-for-deep-learning-without-snn)
   - [Acclerator for Machine Learning](#acclerator-for-machine-learning)
@@ -67,11 +67,12 @@ Poly Materials
 
 ----
 
-# Big Event Timeline
-| **Domain** | **2014** | **2015** | **2016** |
-| --- | --- | --- | --- |
-| DL | Diannao |  |  |
-| Graph | -- | -- | Graphicionado |
+# Big Event Timeline(cite > 100 / Best Paper...)
+| **Domain** | **2014** | **2015** | **2016** | **2017** |
+| --- | --- | --- | --- | --- |
+| DL | Diannao |  | Fused CNN Acclerator | | 
+| SparseNN |  |  | Eyeriss | SCNN |
+| Graph | -- | -- | Graphicionado | |
 
 ----
 
@@ -122,6 +123,8 @@ Poly Materials
 | 2020 ASPLOS | DeepSniffer: A DNN Model Extraction Framework Based on Learning Architectural Hints  |  |  |
 | 2020 ASPLOS | Prague: High-Performance Heterogeneity-Aware Asynchronous Decentralized Training  |  |  |
 | 2020 ASPLOS | NeuMMU: Architectural Support for Efficient Address Translations in Neural Processing Units  | NPU的TLB |  |
+| 2017 ISCA | SCNN: An Accelerator for Compressed-sparse Convolutional Neural Networks  | |  |
+| 2016 MICRO | Fused-Layer CNN Accelerators  | CNN中 layer间的fuse。好处是减少全局内存读写，坏处是冗余计算/增加片上缓存需求 |  |
 
 ----
 
